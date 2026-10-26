@@ -1,0 +1,352 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORPUS | Home</title><style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #172033;
+    }
+
+    header {
+        background: #101d40;
+        color: white;
+        padding: 18px 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .logo-icon {
+        background: #29d9b0;
+        color: #101d40;
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        font-size: 25px;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        color: #29d9b0;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #101d40, #174b76);
+        color: white;
+        padding: 85px 8%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(35px, 7vw, 60px);
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        color: #29d9b0;
+    }
+
+    .hero p {
+        max-width: 600px;
+        margin: 0 auto 30px;
+        line-height: 1.8;
+        color: #dce7f5;
+    }
+
+    .button {
+        display: inline-block;
+        background: #29d9b0;
+        color: #101d40;
+        text-decoration: none;
+        padding: 14px 26px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 65px 8%;
+        text-align: center;
+        scroll-margin-top: 20px;
+    }
+
+    section h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .intro {
+        color: #64748b;
+        line-height: 1.7;
+        max-width: 650px;
+        margin: 0 auto 30px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 22px;
+        margin-top: 35px;
+        text-align: left;
+    }
+
+    .card {
+        background: white;
+        padding: 28px;
+        border-radius: 14px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .card .icon {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        margin-bottom: 12px;
+        color: #101d40;
+    }
+
+    .card p {
+        color: #64748b;
+        line-height: 1.7;
+    }
+
+    #about {
+        background: white;
+    }
+
+    #contact {
+        background: #eaf0f8;
+    }
+
+    .contact-form {
+        max-width: 500px;
+        margin: 25px auto 0;
+        display: grid;
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 14px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        font: inherit;
+    }
+
+    .contact-form textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+    .contact-form button {
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    footer {
+        background: #101d40;
+        color: white;
+        text-align: center;
+        padding: 25px 15px;
+        line-height: 1.8;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            justify-content: center;
+        }
+
+        nav {
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .hero {
+            padding: 65px 6%;
+        }
+
+        section {
+            padding: 50px 6%;
+        }
+    }
+</style>
+
+</head><body><header>
+    <a href="#home" class="logo"
+       style="color:white;text-decoration:none;">
+        <span class="logo-icon">C</span>
+        CORPUS
+    </a>
+
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <h1>Welcome to <span>CORPUS</span></h1>
+        <p>
+            Discover new possibilities with CORPUS.
+            We believe in creativity, technology, and
+            building a better digital future.
+        </p>
+        <a href="#about" class="button">Discover More</a>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p class="intro">
+            Explore what CORPUS has to offer.
+            We are focused on ideas, innovation, and growth.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>
+                    Creating attractive, responsive,
+                    and user-friendly websites.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Innovation</h3>
+                <p>
+                    Turning creative ideas into useful
+                    digital experiences.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Technology</h3>
+                <p>
+                    Exploring technology to make
+                    everyday tasks easier.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About CORPUS</h2>
+        <p class="intro">
+            CORPUS is a digital platform designed to
+            bring ideas to life. Our goal is to create
+            a simple, modern, and enjoyable online
+            experience for every visitor.
+        </p>
+        <a href="#contact" class="button">Get in Touch</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p class="intro">
+            Have a question or an idea?
+            Fill in the form below.
+        </p>
+
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your name"
+                   required>
+
+            <input type="email" placeholder="Your email"
+                   required>
+
+            <textarea placeholder="Write your message"
+                      required></textarea>
+
+            <button type="submit" class="button">
+                Send Message
+            </button>
+        </form>
+
+        <p id="formMessage"
+           style="margin-top:20px;color:#087f5b;">
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> CORPUS.
+       All rights reserved.</p>
+    <p>Built with creativity and technology.</p>
+</footer>
+
+<script>
+    // Display the current year
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+    // Make navigation links work and show the active tab
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(function(link) {
+        link.addEventListener("click", function() {
+            links.forEach(function(item) {
+                item.classList.remove("active");
+            });
+
+            link.classList.add("active");
+        });
+    });
+
+    // Demonstration contact form
+    document.getElementById("contactForm")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("formMessage")
+                .textContent =
+                "Thank you! Your form was completed.";
+
+            this.reset();
+        });
+</script>
+
+</body>
+</html>
